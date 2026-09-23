@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Helder Mateus dos Reis Matos</title>
 <meta name="description" content="PhD candidate in Computer Science at PPGCOMP-UFPA, researcher at the Data Intelligence Laboratory (LID).">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <style>
 :root{
   --bg:#1A1214;
@@ -54,6 +55,10 @@ ul{margin:0;padding:0;list-style:none}
 .head img{width:118px;height:118px;flex:none;border-radius:50%;object-fit:cover;border:2px solid var(--rule)}
 .head>div{min-width:0}
 .links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;margin-bottom:6px}
+.langs{display:flex;gap:16px;margin-top:14px}
+.langs .lang{display:flex;flex-direction:column;align-items:center;gap:5px}
+.langs svg{width:25px;height:18px;display:block;border-radius:2px;box-shadow:0 0 0 1px var(--rule)}
+.langs b{font-size:.67rem;font-weight:600;letter-spacing:.07em;color:var(--muted);font-variant-numeric:tabular-nums}
 .bio{color:var(--muted);max-width:62ch;margin-top:22px}
 /* research interests */
 .interests li{margin:0 0 12px;padding-left:18px;position:relative}
@@ -103,7 +108,7 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:v
     <div>
       <h1>Helder Mateus dos Reis Matos</h1>
       <p class="role">PhD candidate in Computer Science &middot; Computational Intelligence</p>
-      <p class="affil">PPGCOMP &middot; Universidade Federal do Pará &middot; <a href="https://lid.ufpa.br/">Data Intelligence Laboratory (LID)</a> &middot; Belém, Pará, Brazil</p>
+      <p class="affil"><a href="https://ppgcc.propesp.ufpa.br/index.php/br/">PPGCOMP</a> &middot; <a href="https://ufpa.br/">UFPA</a> &middot; <a href="https://lid.ufpa.br/">LID</a> &middot; Belém, Pará, Brazil</p>
 
       <div class="links">
         <a href="mailto:mtshelder@gmail.com">mtshelder@gmail.com</a>
@@ -112,19 +117,74 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:v
         <a href="https://github.com/hellsdeur">GitHub</a>
         <a href="https://www.linkedin.com/in/hellsdeur/">LinkedIn</a>
         <a href="https://www.instagram.com/hellsdeur/">Instagram</a>
-        <a href="http://dgp.cnpq.br/dgp/espelhogrupo/789941">Research group (CNPq)</a>
+      </div>
+
+      <div class="langs">
+        <span class="lang">
+        <svg viewBox="0 0 28 20" role="img" aria-label="Portuguese"><title>I speak, write, read, and understand Brazilian Portuguese natively (C2).</title>
+          <rect width="28" height="20" fill="#009739"/>
+          <polygon points="14,2.4 25.6,10 14,17.6 2.4,10" fill="#FEDD00"/>
+          <circle cx="14" cy="10" r="4.3" fill="#012169"/>
+        </svg>
+        <b>C2</b>
+        </span>
+        <span class="lang">
+        <svg viewBox="0 0 28 20" role="img" aria-label="English"><title>I speak, write, read, and understand American English well (B2).</title>
+          <symbol id="us" viewBox="-1 -1 2 2">
+            <path d="M0,-1 L.225,-.309 L.951,-.309 L.363,.118 L.588,.809 L0,.382 L-.588,.809 L-.363,.118 L-.951,-.309 L-.225,-.309 Z" fill="#FFF"/>
+          </symbol>
+          <rect width="28" height="20" fill="#B31942"/>
+          <g fill="#FFF">
+            <rect y="1.54" width="28" height="1.54"/>
+            <rect y="4.62" width="28" height="1.54"/>
+            <rect y="7.69" width="28" height="1.54"/>
+            <rect y="10.77" width="28" height="1.54"/>
+            <rect y="13.85" width="28" height="1.54"/>
+            <rect y="16.92" width="28" height="1.54"/>
+          </g>
+          <rect width="11.2" height="10.77" fill="#0A3161"/>
+          <g>
+            <use href="#us" x="0.8" y="1.1" width="2.2" height="2.2"/>
+            <use href="#us" x="3.4" y="1.1" width="2.2" height="2.2"/>
+            <use href="#us" x="6" y="1.1" width="2.2" height="2.2"/>
+            <use href="#us" x="8.6" y="1.1" width="2.2" height="2.2"/>
+            <use href="#us" x="2.1" y="4.3" width="2.2" height="2.2"/>
+            <use href="#us" x="4.7" y="4.3" width="2.2" height="2.2"/>
+            <use href="#us" x="7.3" y="4.3" width="2.2" height="2.2"/>
+            <use href="#us" x="0.8" y="7.5" width="2.2" height="2.2"/>
+            <use href="#us" x="3.4" y="7.5" width="2.2" height="2.2"/>
+            <use href="#us" x="6" y="7.5" width="2.2" height="2.2"/>
+            <use href="#us" x="8.6" y="7.5" width="2.2" height="2.2"/>
+          </g>
+        </svg>
+        <b>B2</b>
+        </span>
+        <span class="lang">
+        <svg viewBox="0 0 28 20" role="img" aria-label="Mandarin"><title>I speak, write, read, and understand a little Mandarin (A1).</title>
+          <symbol id="s" viewBox="-1 -1 2 2">
+            <path d="M0,-1 L.225,-.309 L.951,-.309 L.363,.118 L.588,.809 L0,.382 L-.588,.809 L-.363,.118 L-.951,-.309 L-.225,-.309 Z" fill="#FFDE00"/>
+          </symbol>
+          <rect width="28" height="20" fill="#DE2910"/>
+          <use href="#s" x="2.4" y="2.4" width="7.2" height="7.2"/>
+          <use href="#s" x="10.4" y="1.4" width="2.6" height="2.6"/>
+          <use href="#s" x="12.6" y="4" width="2.6" height="2.6"/>
+          <use href="#s" x="12.6" y="7.2" width="2.6" height="2.6"/>
+          <use href="#s" x="10.4" y="9.6" width="2.6" height="2.6"/>
+        </svg>
+        <b>A1</b>
+        </span>
       </div>
     </div>
   </div>
 
-  <p class="bio">I work on global continuous optimization, data mining and natural language processing, with applied projects built in partnership with public institutions in the State of Pará, Brazil.</p>
+  <p class="bio">I work on global continuous optimization, data mining, and natural language processing, with applied projects built in partnership with public institutions in the State of Pará, Brazil.</p>
 
   <h2>Research interests</h2>
   <ul class="interests">
-    <li><b>Continuous global optimization</b>: <span> population-based metaheuristics, particle swarm optimization and its variants, benchmark evaluation on hard continuous landscapes.</span></li>
-    <li><b>Data mining</b>: <span> knowledge discovery in large databases, associative rule learning and pattern discovery in real transactional and institutional data.</span></li>
-    <li><b>Natural language processing</b>: <span> text classification, language models and retrieval-augmented pipelines applied to institutional records.</span></li>
-    <li><b>Applied machine learning</b>: <span> supervised models for public security, education, retail and healthcare settings.</span></li>
+    <li><b>Continuous global optimization</b>: <span> population-based metaheuristics, swarm intelligence, benchmark evaluation on hard continuous landscapes, and runtime analysis.</span></li>
+    <li><b>Data mining</b>: <span> knowledge discovery in large databases, associative rule learning, and pattern discovery in real transactional and institutional data.</span></li>
+    <li><b>Natural language processing</b>: <span> text classification, language models, and retrieval-augmented pipelines applied to institutional records.</span></li>
+    <li><b>Applied machine learning</b>: <span> supervised models for public security, education, retail, and healthcare settings.</span></li>
   </ul>
 
   <h2>Publications</h2>
@@ -143,11 +203,15 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:v
   <div class="cards">
 
     <div class="card">
-      <h3>Oraculo<span class="tag done">completed</span></h3>
-      <p class="meta">UFPA with SIAC/SEGUP-PA &middot; 2024-2025</p>
-      <p>Classification system for police incident reports in Pará, using natural language processing and
-      deep learning to automate prediction and support statistical analysis of police records.
-      Builds on an earlier language-model-based report classifier (BR512024004522-8, 2024).</p>
+      <h3>LAPAC GO<span class="tag">ongoing</span></h3>
+      <p class="meta">UFPA &middot; 2026&ndash;present</p>
+      <p>Mobile application for the Fuel Research and Analysis Laboratory (LAPAC/UFPA) to securely collect, store, and manage data from on-site fuel sampling at gas stations across Pará, automating the laboratory's inspection and quality-control workflows.</p>
+    </div>
+
+    <div class="card">
+      <h3>AVIDA<span class="tag done">completed</span></h3>
+      <p class="meta">UFPA &middot; funded by RNP &middot; 2025&ndash;2026</p>
+      <p>Web platform for analysis and visualisation of academic data, identifying patterns in researcher trajectories. Phase 2 integrates Google Scholar, Scopus, and ORCID with NLP, LLMs, RAG, and knowledge graphs to provide a dialogue interface, semantic search, profile comparison, and automatic summarization of academic CVs.</p>
     </div>
 
     <div class="card">
@@ -161,20 +225,11 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:v
     </div>
 
     <div class="card">
-      <h3>AVIDA<span class="tag done">completed</span></h3>
-      <p class="meta">UFPA &middot; funded by RNP &middot; 2025&ndash;2026</p>
-      <p>Web platform for analysis and visualisation of academic data, identifying patterns in researcher
-      trajectories. Phase 2 integrates Google Scholar, Scopus and ORCID with NLP, LLMs, RAG and knowledge
-      graphs to provide a dialogue interface, semantic search, profile comparison and automatic
-      summarisation of academic CVs.</p>
-    </div>
-
-    <div class="card">
-      <h3>LAPAC GO<span class="tag">ongoing</span></h3>
-      <p class="meta">UFPA &middot; 2026&ndash;present</p>
-      <p>Mobile application for the Fuel Research and Analysis Laboratory (LAPAC/UFPA) to securely collect,
-      store and manage data from on-site fuel sampling at gas stations across Pará, automating the
-      laboratory's inspection and quality-control workflows.</p>
+      <h3>Oraculo<span class="tag done">completed</span></h3>
+      <p class="meta">UFPA with SIAC/SEGUP-PA &middot; 2021-2025</p>
+      <p>Classification system for police incident reports in Pará, using natural language processing and
+      deep learning to automate prediction and support statistical analysis of police records.
+      Builds on an earlier language-model-based report classifier (BR512024004522-8, 2024).</p>
     </div>
 
   </div>
@@ -200,7 +255,7 @@ footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:v
     <li><span class="ttl">GENIAL &mdash; Genetic and Evolutionary Nature-Inspired ALgorithms</span> ICEN/UFPA &middot; 30h &middot; 2025 &middot; instructor &middot; <a href="https://github.com/lid-ufpa/genial">repository</a></li>
     <li><span class="ttl">GenDL &mdash; Deep Learning Applied to Genomics</span> PPGBM/UFPA &middot; 3h30 &middot; 2026 &middot; instructor &middot; <a href="https://github.com/hellsdeur/gendl">repository</a></li>
     <li><span class="ttl">PLNCC &mdash; NLP in Practice: From Data to Modelling</span> UFPA &middot; 2h &middot; 2026 &middot; instructor &middot; <a href="https://github.com/hellsdeur/plncc">repository</a></li>
-    <li><span class="ttl">Artificial Intelligence Applied to Natural Language Text Reading, Processing and Classification</span> SBC / UFPA &middot; 1h &middot; 2024 &middot; instructor</li>
+    <li><span class="ttl">Artificial Intelligence Applied to Natural Language Text Reading, Processing, and Classification</span> SBC / UFPA &middot; 1h &middot; 2024 &middot; instructor</li>
   </ul>
 
   <footer>
