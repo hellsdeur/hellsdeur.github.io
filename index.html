@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helder Mateus dos Reis Matos</title>
+<meta name="description" content="PhD candidate in Computer Science at PPGCOMP-UFPA, researcher at the Data Intelligence Laboratory (LID).">
+<style>
+:root{
+  --bg:#1A1214;
+  --fg:#F2ECE8;
+  --muted:#A39A94;
+  --rule:rgba(242,236,232,.13);
+  --card:rgba(242,236,232,.035);
+  --accent:#E0555F;        /* ruby, lightened for dark backgrounds */
+  --accent-deep:#9B111E;   /* ruby */
+  --teal:#2FC2B2;
+  --gold:#C9A227;
+}
+:root[data-theme="light"]{
+  --bg:#FAF6F0;
+  --fg:#1F1B1A;
+  --muted:#6E6560;
+  --rule:rgba(31,27,26,.14);
+  --card:rgba(31,27,26,.03);
+  --accent:#9B111E;
+  --accent-deep:#9B111E;
+  --teal:#0E8377;
+  --gold:#8A6D18;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+}
+body::before{content:"";display:block;height:4px;background:var(--accent-deep)}
+main{max-width:760px;margin:0 auto;padding:56px 16px 96px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 6px;letter-spacing:-.02em}
+h2{
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);font-weight:600;
+  margin:52px 0 18px;padding-left:12px;border-left:3px solid var(--accent-deep);
+}
+p{margin:0 0 14px}
+ul{margin:0;padding:0;list-style:none}
+.role{color:var(--fg);margin:0 0 2px}
+.affil{color:var(--muted);margin:0 0 20px}
+.head{display:flex;gap:26px;align-items:flex-start;margin-bottom:22px}
+.head img{width:118px;height:118px;flex:none;border-radius:50%;object-fit:cover;border:2px solid var(--rule)}
+.head>div{min-width:0}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;margin-bottom:6px}
+.bio{color:var(--muted);max-width:62ch;margin-top:22px}
+/* research interests */
+.interests li{margin:0 0 12px;padding-left:18px;position:relative}
+.interests li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--teal);border-radius:50%}
+.interests b{font-weight:600}
+.interests span{color:var(--muted)}
+/* publications */
+.pubs li{margin:0 0 14px;padding-left:56px;position:relative;color:var(--muted)}
+.pubs .yr{position:absolute;left:0;top:0;color:var(--teal);font-variant-numeric:tabular-nums;font-size:.9rem}
+.pubs .ttl{color:var(--fg)}
+.pubs em{font-style:normal;color:var(--fg);font-weight:600}
+/* cards */
+.cards{display:grid;gap:14px}
+.card{border:1px solid var(--rule);background:var(--card);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 4px;font-size:1rem}
+.card .meta{color:var(--muted);font-size:.85rem;margin:0 0 8px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tag{
+  display:inline-block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--teal);color:var(--teal);border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:2px;
+}
+.tag.done{border-color:var(--muted);color:var(--muted)}
+/* simple lists */
+.rows li{margin:0 0 12px;color:var(--muted)}
+.rows .ttl{color:var(--fg);display:block}
+.sub{color:var(--muted);font-size:.85rem;margin:26px 0 12px;text-transform:uppercase;letter-spacing:.1em}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#theme{
+  background:none;border:1px solid var(--rule);color:var(--muted);
+  border-radius:999px;padding:3px 12px;font:inherit;font-size:.8rem;cursor:pointer;
+}
+#theme:hover{color:var(--fg);border-color:var(--muted)}
+@media(max-width:520px){
+  main{padding-top:36px}
+  .head{flex-direction:column;gap:18px}
+  .head img{width:96px;height:96px}
+  .pubs li{padding-left:0}
+  .pubs .yr{position:static;display:block;margin-bottom:2px}
+}
+</style>
+</head>
+<body>
+<main>
+
+  <div class="head">
+    <img src="images/profile.jpg" alt="Helder Mateus dos Reis Matos" width="118" height="118">
+    <div>
+      <h1>Helder Mateus dos Reis Matos</h1>
+      <p class="role">PhD candidate in Computer Science &middot; Computational Intelligence</p>
+      <p class="affil">PPGCOMP &middot; Universidade Federal do Pará &middot; <a href="https://lid.ufpa.br/">Data Intelligence Laboratory (LID)</a> &middot; Belém, Pará, Brazil</p>
+
+      <div class="links">
+        <a href="mailto:mtshelder@gmail.com">mtshelder@gmail.com</a>
+        <a href="https://orcid.org/0000-0002-5632-7948">ORCID</a>
+        <a href="http://lattes.cnpq.br/2551518132451353">Lattes</a>
+        <a href="https://github.com/hellsdeur">GitHub</a>
+        <a href="https://www.linkedin.com/in/hellsdeur/">LinkedIn</a>
+        <a href="https://www.instagram.com/hellsdeur/">Instagram</a>
+        <a href="http://dgp.cnpq.br/dgp/espelhogrupo/789941">Research group (CNPq)</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="bio">I work on global continuous optimization, data mining and natural language processing, with applied projects built in partnership with public institutions in the State of Pará, Brazil.</p>
+
+  <h2>Research interests</h2>
+  <ul class="interests">
+    <li><b>Continuous global optimization</b>: <span> population-based metaheuristics, particle swarm optimization and its variants, benchmark evaluation on hard continuous landscapes.</span></li>
+    <li><b>Data mining</b>: <span> knowledge discovery in large databases, associative rule learning and pattern discovery in real transactional and institutional data.</span></li>
+    <li><b>Natural language processing</b>: <span> text classification, language models and retrieval-augmented pipelines applied to institutional records.</span></li>
+    <li><b>Applied machine learning</b>: <span> supervised models for public security, education, retail and healthcare settings.</span></li>
+  </ul>
+
+  <h2>Publications</h2>
+  <ul class="pubs">
+    <li><span class="yr">2026</span><span class="ttl">Pereira, J.; <em>Matos, H. M. R.</em>; Costa, J. C.; Santos, R. &ldquo;Analysis of Co-Authorship Relationships in Graduate Programs in Computer Science in Brazil&rdquo;. SEMISH 2026. <a href="https://doi.org/10.5753/semish.2026.21157">doi</a></span></li>
+    <li><span class="yr">2024</span><span class="ttl"><em>Matos, H. M. R.</em>; Ribeiro, W. F.; Costa, J. C. W. A.; Santos Filho, R. C. &ldquo;An Environment for Discovery of Associative Rules in Massive Datasets of Market Transactions&rdquo;. ENIAC 2024. <a href="https://doi.org/10.5753/eniac.2024.245197">doi</a></span></li>
+    <li><span class="yr">2024</span><span class="ttl">Viana, J. A. D.; <em>Matos, H. M. R.</em>; Mota, M. P.; Santos Filho, R. C. &ldquo;Classifying Graphs of Elementary Mathematical Functions Using Convolutional Neural Networks&rdquo;. <a href="https://bracis.sbc.org.br/2024/">BRACIS 2024</a>.</span></li>
+    <li><span class="yr">2024</span><span class="ttl"><em>Matos, H. M. R.</em>; Ribeiro, W. F.; Costa, J. C. W. A.; Santos Filho, R. C. &ldquo;Discovering Shopping Patterns and Trends in Supermarkets Using Shopping Basket Analysis&rdquo;. 20th CONTECSI. <a href="https://doi.org/10.5748/20CONTECSI/PSE/DSC/7336">doi</a></span></li>
+    <li><span class="yr">2022</span><span class="ttl"><em>Matos, H. M. R.</em>; Souza, S.; Santos, R.; Costa, J. W.; Costa, C. &ldquo;A Supervised Classifier for Police Reports at the State of Pará, Brazil&rdquo;. ERAD/ERAMIA-NO2 2022. <a href="https://doi.org/10.5753/erad-no2.2022.228238">doi</a></span></li>
+    <li><span class="yr">2022</span><span class="ttl">Souza, S. L.; <em>Matos, H. M. R.</em>; Costa, C. F. P. S.; Santos Filho, R. C.; Costa, J. C. W. A. &ldquo;Data Mining in Public Security Databases in Belém, Pará, Brazil&rdquo;. ERAD/ERAMIA-NO2 2022. <a href="https://doi.org/10.5753/erad-no2.2022.228247">doi</a></span></li>
+    <li><span class="yr">2022</span><span class="ttl"><em>Matos, H. M. R.</em>; Souza, S. L.; Santos Filho, R. C.; Costa, J. C. W. A. &ldquo;A Supervised Classifier for Police Reports at the State of Pará, Brazil&rdquo;. 19th CONTECSI. <a href="https://doi.org/10.5748/19CONTECSI/PSE/DSC/7142">doi</a></span></li>
+    <li><span class="yr">2022</span><span class="ttl">Souza, S. L.; <em>Matos, H. M. R.</em>; Santos Filho, R. C.; Costa, J. C. W. A. &ldquo;Data Mining and Analysis Applied to Public Security Data in Belém of Pará, Brazil&rdquo;. 19th CONTECSI. <a href="https://doi.org/10.5748/19CONTECSI/PSE/DSC/7049">doi</a></span></li>
+  </ul>
+
+  <h2>Development projects</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Oraculo<span class="tag done">completed</span></h3>
+      <p class="meta">UFPA with SIAC/SEGUP-PA &middot; 2024-2025</p>
+      <p>Classification system for police incident reports in Pará, using natural language processing and
+      deep learning to automate prediction and support statistical analysis of police records.
+      Builds on an earlier language-model-based report classifier (BR512024004522-8, 2024).</p>
+    </div>
+
+    <div class="card">
+      <h3>Smart City Canaã dos Carajás<span class="tag done">completed</span></h3>
+      <p class="meta">UFPA with Prefeitura Municipal de Canaã dos Carajás &middot; 2023-2024</p>
+      <p>Applied AI modules for the &ldquo;Mina do Futuro&rdquo; digital technology and innovation programme:
+      intelligent detection of trash and debris on public roads (BR512023003722-2),
+      recognition and classification of student emotions in the classroom (BR512024000217-0),
+      and the Conecta Canaã image (BR512025005575-7) and text (BR512025005574-9) classification
+      modules for municipal incident reports.</p>
+    </div>
+
+    <div class="card">
+      <h3>AVIDA<span class="tag done">completed</span></h3>
+      <p class="meta">UFPA &middot; funded by RNP &middot; 2025&ndash;2026</p>
+      <p>Web platform for analysis and visualisation of academic data, identifying patterns in researcher
+      trajectories. Phase 2 integrates Google Scholar, Scopus and ORCID with NLP, LLMs, RAG and knowledge
+      graphs to provide a dialogue interface, semantic search, profile comparison and automatic
+      summarisation of academic CVs.</p>
+    </div>
+
+    <div class="card">
+      <h3>LAPAC GO<span class="tag">ongoing</span></h3>
+      <p class="meta">UFPA &middot; 2026&ndash;present</p>
+      <p>Mobile application for the Fuel Research and Analysis Laboratory (LAPAC/UFPA) to securely collect,
+      store and manage data from on-site fuel sampling at gas stations across Pará, automating the
+      laboratory's inspection and quality-control workflows.</p>
+    </div>
+
+  </div>
+
+  <h2>Mentorship</h2>
+  <ul class="rows">
+    <li><span class="ttl">Eduardo Kohei Seko</span> Investigation on the Adjustment of Coefficients Across Iterations in Adaptive PSO &middot; Computer Science, UFPA &middot; 2026</li>
+    <li><span class="ttl">Marcos Vinícius Brito de Araújo</span> Development of a Parallelised Particle Swarm Optimisation Algorithm with Deterministic Methods Applied to the Best Particle &middot; Computer Science, UFPA &middot; 2026</li>
+    <li><span class="ttl">Izaac Soares Nery Junior</span> Comparative Analysis of Machine Learning Models for Demand Forecasting in Supermarkets &middot; Computer Engineering, UFPA &middot; 2026</li>
+  </ul>
+
+  <p class="sub">Undergraduate thesis committees</p>
+  <ul class="rows">
+    <li><span class="ttl">Max José Lobato Pantoja Júnior</span> SAGE: A Multi-Agent Architecture with RAG for Structured Specification and Normative Querying of Criminal Incidents &middot; Computer Science, UFPA &middot; 2026</li>
+    <li><span class="ttl">Paula Manoella Mesquita de Brito</span> Student Perception in AVALIA UFPA: A Hybrid Approach with Topic Modelling and Automatic Labelling with LLMs &middot; Information Systems, UFPA &middot; 2026</li>
+    <li><span class="ttl">Marcos Matheus Rodrigues Sá de Souza</span> Dataforma: A Web Application for Teaching Programming &middot; Computer Engineering, UFPA &middot; 2024</li>
+  </ul>
+
+  <h2>Lecture material</h2>
+  <ul class="rows">
+    <li><span class="ttl">Introduction to LaTeX</span> 50min &middot; 2023 &middot; <a href="https://drive.google.com/file/d/1ldTXdTKw8OEiG5ip7saHvNhXfcJM22z3/view?usp=sharing">slides</a></li>
+    <li><span class="ttl">MLCC &mdash; Machine Learning Crash Course: Hands On with Python</span> ICEN/UFPA &middot; 24h &middot; 2024 &middot; organiser &middot; <a href="https://github.com/lid-ufpa/mlcc">repository</a></li>
+    <li><span class="ttl">GENIAL &mdash; Genetic and Evolutionary Nature-Inspired ALgorithms</span> ICEN/UFPA &middot; 30h &middot; 2025 &middot; instructor &middot; <a href="https://github.com/lid-ufpa/genial">repository</a></li>
+    <li><span class="ttl">GenDL &mdash; Deep Learning Applied to Genomics</span> PPGBM/UFPA &middot; 3h30 &middot; 2026 &middot; instructor &middot; <a href="https://github.com/hellsdeur/gendl">repository</a></li>
+    <li><span class="ttl">PLNCC &mdash; NLP in Practice: From Data to Modelling</span> UFPA &middot; 2h &middot; 2026 &middot; instructor &middot; <a href="https://github.com/hellsdeur/plncc">repository</a></li>
+    <li><span class="ttl">Artificial Intelligence Applied to Natural Language Text Reading, Processing and Classification</span> SBC / UFPA &middot; 1h &middot; 2024 &middot; instructor</li>
+  </ul>
+
+  <footer>
+    <span>Last updated September 2026</span>
+    <button id="theme" type="button">Light mode</button>
+  </footer>
+
+</main>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme'),saved=null;
+  try{saved=localStorage.getItem('theme')}catch(e){}
+  function apply(t){
+    if(t==='light'){root.setAttribute('data-theme','light');btn.textContent='Dark mode'}
+    else{root.removeAttribute('data-theme');btn.textContent='Light mode'}
+  }
+  apply(saved);
+  btn.addEventListener('click',function(){
+    var next=root.getAttribute('data-theme')==='light'?'dark':'light';
+    apply(next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
